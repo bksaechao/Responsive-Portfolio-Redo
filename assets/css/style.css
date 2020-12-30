@@ -200,4 +200,8 @@ h3:hover {
         padding: 20px;
         padding-right: 50px;
     }
+
+    #float-image {
+        width: 100%;
+    }
 }
