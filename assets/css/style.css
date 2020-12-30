@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    color: #777777;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 34px;
+    background: url("../images/canadian-dollar.png");
+}
+
+/* Banner */
+.banner {
+    position: absolute;
+    padding: 30px;
+    background: #66cac5;
+    left: 280px;
+    font-size: 30px;
+}
+
+.name {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight: 700;
+}
+
+/* Nav */
+.navbar {
+    position: sticky;
+    border-bottom: 2px solid #cccccc;
+    height: 96px;
+    overflow: hidden;
+    top: 0;
+    background: #ffffff;
+    z-index: 99;
+    margin-bottom: 30px;
+}
+
+.nav-list {
+    position: absolute;
+    right: 240px;
+    padding: 40px;
+    display: inline;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #999;
+    border-left: 1px solid #efefef;
+    margin-left: 15px;
+    padding-left: 15px;
+}
+
+.nav-list a:first-child {
+    border-left: none;
+}
+
+
+/* Main Section */
+#main-container {
+    min-height: calc(100vh - 150px);
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.main-content {
+    float: left;
+    width: 100%;
+    max-width: 960px;
+    padding: 30px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    margin-bottom: 40px;
+}
+
+#float-image {
+    float: left;
+    margin-top: 10px;
+    margin-right: 25px;
+}
+
+h2 {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #4aaaa5;
+    border-bottom: 3px solid #dddddd;
+}
+
+/* Contact Form */
+#name,
+#email,
+textarea {
+    display: block;
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+textarea {
+    height: 150px;
+}
+
+#submit {
+    background: #66cac5;
+    border: none;
+    color: #ffffff;
+    padding: 10px 30px;
+    font-size: 18px;
+}
+
+#submit:hover {
+    opacity: 0.8;
+}
+
+/* Portfolio */
+.project {
+    position: relative;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.project:nth-child(2), 
+.project:nth-child(4) {
+    margin-right: 40px;
+}
+
+.project:nth-child(3),
+.project:nth-child(5) {
+    margin-right: 260px;
+}
+
+h3 {
+    position: absolute;
+    bottom: 10%;
+    text-align: center;
+    color: #ffffff;
+    background: #66cac5;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+h3:hover {
+    opacity: 0.8;
+    cursor: grab;
+}
+
+/* Footer */
+.footer {
+    height: 50px;
+    clear: both;
+    background: #666666;
+    font-size: 12px;
+    border-top: 8px solid #4aaaa5;
+    text-align: center;
+    color: #cccccc;
+    padding: 30px 0;
+}
+
+@media screen and (max-width: 980px) {
+
+}
+
+@media screeen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 640px) {
+    
+}
