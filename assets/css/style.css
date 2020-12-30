@@ -175,8 +175,19 @@ h3:hover {
 
 }
 
-@media screeen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    .banner {
+        left: 0;
+    }
 
+    .nav-list {
+        right: 0;
+        padding: 30px;
+    }
+
+    #float-image {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 640px) {
