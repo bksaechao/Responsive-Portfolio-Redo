@@ -74,6 +74,7 @@ body {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
+    overflow: auto;
 }
 
 .main-content {
@@ -90,7 +91,6 @@ body {
     float: left;
     margin-top: 10px;
     margin-right: 25px;
-    height: auto;
 }
 
 h2 {
@@ -141,20 +141,20 @@ li {
 }
 
 /* Portfolio */
-.project {
-    position: relative;
+.flex-column {
     float: left;
+}
+.flex-column:first-of-type {
+    margin-right: 30px;
+}
+
+.flex-column .project:nth-child(1),
+.flex-column:first-of-type .project:nth-child(2) {
     margin-bottom: 20px;
 }
 
-.project:nth-child(2), 
-.project:nth-child(4) {
-    margin-right: 40px;
-}
-
-.project:nth-child(3),
-.project:nth-child(5) {
-    margin-right: 260px;
+.project {
+    position: relative;
 }
 
 h3 {
@@ -229,11 +229,6 @@ h3:hover {
     #float-image {
         width: 50%;
     }
-
-    /* Contact Page */
-    .main-content {
-        max-width: 100%;
-    }
 }
 
 @media screen and (max-width: 640px) {
@@ -264,6 +259,16 @@ h3:hover {
         width: 100%;
     }
 
-    /* Contact Page */
+    /* Portfolio Page */
+    .project img {
+        width: 100%;
+    }
 
+    .flex-column {
+        float: none;
+    }
+
+    .flex-column:first-of-type {
+        margin-right: 0;
+    }
 }
