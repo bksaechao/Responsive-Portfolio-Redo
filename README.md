@@ -1,5 +1,6 @@
 # Responsive-Portfolio-Redo
 <p>Part 2 of a 2 part follow up to the <a href="https://github.com/bksaechao/Basic-Portfolio-Redo">previous assignment</a>, but instead of building a portfolio with pure html/css, the second task is to enhance the previous assignment (The Basic Portfolio Redo) with media queries .</p>
+(Use the developer tools to view the pages at different screen widths)
 <ul>
   <li>
     <a href="https://bksaechao.github.io/Responsive-Portfolio-Redo/">Finished Project</a>
@@ -55,5 +56,8 @@
   </li>
   <li>
     I need to improve use of proper syntax and common practice methods in web dev.
+  </li>
+  <li>
+    Although it was challenging, comprehension was much stronger this time around!
   </li>
 </ul>
