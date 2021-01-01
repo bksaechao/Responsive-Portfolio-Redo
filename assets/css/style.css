@@ -193,8 +193,15 @@ h3:hover {
 
     .banner {
         left: 0;
+        animation-name: change-purple;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
     }
 
+    @keyframes change-purple {
+        from {background-color: #66cac5;}
+        to {background-color: blueviolet;}
+    }
     .nav-list {
         right: 5px;
     }
@@ -218,8 +225,15 @@ h3:hover {
     .banner {
         left: 0;
         padding: 28px;
+        animation-name: change-blue;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
     }
 
+    @keyframes change-blue {
+        from {background-color: blueviolet;}
+        to {background-color: blue;}
+    }
     .nav-list {
         right: 0;
         padding: 25px;
@@ -245,6 +259,14 @@ h3:hover {
         position: static;
         text-align: center;
         padding: 27px;
+        animation-name: change-red;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes change-red {
+        from {background-color: blue;}
+        to {background-color: red;}
     }
 
     .nav-list {
