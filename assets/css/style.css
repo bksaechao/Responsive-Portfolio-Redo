@@ -21,11 +21,18 @@ body {
 .banner {
     position: absolute;
     padding: 30px;
-    background: #66cac5;
+    background: blueviolet;
     left: 280px;
     font-size: 30px;
+    animation-name: change-teal;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 
+@keyframes change-teal {
+    from {background-color: blueviolet;}
+    to {background: #66cac5;}
+}
 .name {
     color: #ffffff;
     text-decoration: none;
@@ -99,8 +106,16 @@ h2 {
     padding-bottom: 20px;
     margin-bottom: 20px;
     font-weight: 700;
-    color: #4aaaa5;
+    color: blueviolet;
     border-bottom: 3px solid #dddddd;
+    animation-name: change-teal-font;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes change-teal-font {
+    from {color: blueviolet;}
+    to {color: #66cac5;}
 }
 
 /* Contact Form */
@@ -194,7 +209,7 @@ h3:hover {
     .banner {
         left: 0;
         animation-name: change-purple;
-        animation-duration: 4s;
+        animation-duration: 2s;
         animation-fill-mode: forwards;
     }
 
@@ -202,6 +217,18 @@ h3:hover {
         from {background-color: #66cac5;}
         to {background-color: blueviolet;}
     }
+
+    h2 {
+        animation-name: change-purple-font;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes change-purple-font {
+        from {color: #66cac5;}
+        to {color: blueviolet;}
+    }
+
     .nav-list {
         right: 5px;
     }
@@ -226,7 +253,7 @@ h3:hover {
         left: 0;
         padding: 28px;
         animation-name: change-blue;
-        animation-duration: 4s;
+        animation-duration: 2s;
         animation-fill-mode: forwards;
     }
 
@@ -234,6 +261,18 @@ h3:hover {
         from {background-color: blueviolet;}
         to {background-color: blue;}
     }
+
+    h2 {
+        animation-name: change-blue-font;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes change-blue-font {
+        from {color: blueviolet;}
+        to {color: blue;}
+    }
+
     .nav-list {
         right: 0;
         padding: 25px;
@@ -260,13 +299,25 @@ h3:hover {
         text-align: center;
         padding: 27px;
         animation-name: change-red;
-        animation-duration: 4s;
+        animation-duration: 2s;
         animation-fill-mode: forwards;
     }
 
     @keyframes change-red {
         from {background-color: blue;}
         to {background-color: red;}
+    }
+
+    h2 {
+        text-align: center;
+        animation-name: change-red-font;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;     
+    }
+
+    @keyframes change-red-font {
+        from {color: blue;}
+        to {color: red;}
     }
 
     .nav-list {
